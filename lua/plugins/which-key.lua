@@ -56,7 +56,6 @@ return {
       { "<leader>fe", "<cmd>Oil<CR>", desc = "File Explorer" },
       { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Fuzzy Find Files" },
       { "<leader>fg", "<cmd>Telescope live_grep<CR>", desc = "Ripgrep" },
-      { "<leader>fl", function() vim.cmd("edit " .. TxtPath) end, desc = "Open lv.txt" },
       { "<leader>ft", "<cmd>TodoTelescope<CR>", desc = "Search TODO" },
       { "<leader>fv", function() require("oil").open(VaultPath) end, desc = "Open Vault" },
 
@@ -92,7 +91,7 @@ return {
 
       { "<leader>r", group = "runner" },
 
-      { "<leader>s", function() Snacks.scratch() end, desc = "Toggle Scratch Buffer" },
+      { "<leader>s", function() Snacks.scratch({file = TxtPath, ft = "text"}) end, desc = "Toggle Scratch Buffer" },
 
       { "<leader>t", function() Snacks.terminal() end, desc = "Toggle Terminal" },
 
