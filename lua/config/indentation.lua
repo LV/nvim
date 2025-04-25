@@ -31,6 +31,12 @@ set_indentation_settings({
     tabstop = 4,
   },
 
+  cs = {
+    expandtab = true,
+    shiftwidth = 4,
+    tabstop = 4,
+  },
+
   dockerfile = {
     expandtab = true,
     shiftwidth = 4,
