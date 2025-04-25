@@ -99,6 +99,7 @@ return {
 
       { "<leader>w", group = "window" },
       { "<leader>ws", "<cmd>split<CR>", desc = "Split Window Horizontally" },
+      { "<leader>wt", "<cmd>tabnew<CR>", desc = "New Tab" },
       { "<leader>wv", "<cmd>vsplit<CR>", desc = "Split Window Vertically" },
       -- More window navigation keybindings in =config/keymaps.lua=
     },
