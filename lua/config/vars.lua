@@ -14,6 +14,8 @@ end
 local hostname = get_hostname()
 if hostname == "lvictoria7" then
   VaultPath = "~/bbvault"
+  TxtPath = "~/bb.txt/bb.txt"
 else
   VaultPath = "~/vault"
+  TxtPath = "~/lv.txt/lv.txt"
 end

@@ -24,6 +24,12 @@ local lazygit_repo_from_cwd = function()
 end
 
 ---@param path string
+---@return nil
+local function open_buffer(path)
+  vim.cmd("edit " .. path)
+end
+
+---@param path string
 ---@return fun(): nil
 local function oil_open_path(path)
   return function()
@@ -64,6 +70,7 @@ return {
       { "<leader>fe", "<cmd>Oil<CR>", desc = "File Explorer" },
       { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Fuzzy Find Files" },
       { "<leader>fg", "<cmd>Telescope live_grep<CR>", desc = "Ripgrep" },
+      { "<leader>fl", function() open_buffer(TxtPath) end, desc = "Open lv.txt" },
       { "<leader>ft", "<cmd>TodoTelescope<CR>", desc = "Search TODO" },
       { "<leader>fv", oil_open_path(VaultPath), desc = "Open Vault" },
 
