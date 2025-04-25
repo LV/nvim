@@ -91,7 +91,7 @@ return {
 
       { "<leader>r", group = "runner" },
 
-      { "<leader>s", function() Snacks.scratch({file = TxtPath, ft = "text"}) end, desc = "Toggle Scratch Buffer" },
+      { "<leader>s", function() Snacks.scratch({file = TxtPath, ft = "text", icon = "λ", name = "lv.txt"}) end, desc = "Toggle Scratch Buffer" },
 
       { "<leader>t", function() Snacks.terminal() end, desc = "Toggle Terminal" },
 
