@@ -1,4 +1,4 @@
-require("config/vault")
+require("config/vars")
 require("util/which-key")
 
 -- HELPER FUNCTIONS

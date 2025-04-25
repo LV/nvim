@@ -1,4 +1,4 @@
--- Configuration options for obsidian vault
+-- Configuration options for variables
 ---@return string | nil
 local function get_hostname()
   local handle = io.popen("hostname") -- Runs the hostname command
