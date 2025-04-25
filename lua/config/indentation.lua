@@ -91,6 +91,12 @@ set_indentation_settings({
     tabstop = 4,
   },
 
+  text = {
+    expandtab = true,
+    shiftwidth = 2,
+    tabstop = 2,
+  },
+
   typst = {
     expandtab = true,
     shiftwidth = 2,
