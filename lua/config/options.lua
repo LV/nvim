@@ -1,3 +1,9 @@
+-- lua/config/options.lua
+--
+-- Default Neovim options.
+-- Some of these are overwritten depending on context
+
+
 local opt = vim.opt
 
 -- Indentation
