@@ -1,3 +1,8 @@
+-- lua/config/vars.lua
+--
+-- Assigns variable values upon launching Neovim.
+
+
 -- Configuration options for variables
 ---@return string | nil
 local function get_hostname()
