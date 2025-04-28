@@ -1,4 +1,4 @@
-require("util/input-prompt")
+require("util.input-prompt")
 
 -- 'Create Note' Functions
 function CreateAtomicNote()

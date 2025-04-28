@@ -1,5 +1,5 @@
-require("config/vars")
-require("util/which-key")
+require("config.vars")
+require("util.which-key")
 
 -- HELPER FUNCTIONS
 ---@return nil
