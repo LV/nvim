@@ -12,9 +12,9 @@ local function get_hostname()
 end
 
 local hostname = get_hostname()
-if hostname == "lvictoria7" then
+if hostname == "FY1V4T0VFJ" then
   VaultPath = "~/bbvault"
-  TxtPath = "~/bb.txt/bb.txt"
+  TxtPath = "/Users/lvictoria7/bb.txt/bb.txt"
 else
   VaultPath = "~/vault"
   TxtPath = "~/lv.txt/lv.txt"
