@@ -19,8 +19,10 @@ end
 local hostname = get_hostname()
 if hostname == "FY1V4T0VFJ" then
   VaultPath = "~/bbvault"
-  TxtPath = "/Users/lvictoria7/bb.txt/bb.txt"
+  TxtFilename = "bb.txt"
+  TxtPath = "/Users/lvictoria7/" .. TxtFilename .. "/" .. TxtFilename
 else
   VaultPath = "~/vault"
-  TxtPath = "~/lv.txt/lv.txt"
+  TxtFilename = "lv.txt"
+  TxtPath = "~/" .. TxtFilename .. "/" .. TxtFilename
 end
