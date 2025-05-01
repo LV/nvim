@@ -17,11 +17,11 @@ local function get_hostname()
 end
 
 local hostname = get_hostname()
-if hostname == "FY1V4T0VFJ" then
+if hostname == "FY1V4T0VFJ" then  -- Work environment
   VaultPath = "~/bbvault"
   TxtFilename = "bb.txt"
   TxtPath = "/Users/lvictoria7/" .. TxtFilename .. "/" .. TxtFilename
-else
+else  -- Default environment
   VaultPath = "~/vault"
   TxtFilename = "lv.txt"
   TxtPath = "~/" .. TxtFilename .. "/" .. TxtFilename
