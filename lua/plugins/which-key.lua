@@ -61,9 +61,7 @@ return {
 
       { "<leader>g", group = "git" },
       { "<leader>gB", function() Snacks.gitbrowse() end, desc = "Git Browse" },
-      { "<leader>gb", group = "blame" },
-      { "<leader>gbb", "<cmd>Git blame<CR>", desc = "Blame" },
-      { "<leader>gbl", function() Snacks.git.blame_line() end, desc = "Git Blame Line" },
+      { "<leader>gb", function() Snacks.git.blame_line() end, desc = "Git Blame Line" },
       { "<leader>gd", "<cmd>Git diff<CR>", desc = "Diff" },
       { "<leader>gg", function() lazygit_repo_from_cwd() end, desc = "LazyGit" },
       { "<leader>gl", function() Snacks.lazygit.log() end, desc = "Lazygit Log (cwd)" },
