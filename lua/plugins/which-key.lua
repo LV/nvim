@@ -70,30 +70,17 @@ return {
       { "<leader>nd", function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications" },
       { "<leader>nh", function() Snacks.notifier.show_history() end, desc = "Notification History" },
 
-      { "<leader>o", group = "org" },
-      { "<leader>oa", "<cmd>Org agenda<CR>", desc = "Agenda"},
-      { "<leader>oc", "<cmd>Org capture<CR>", desc = "Capture"},
-      { "<leader>od", group = "daily" },
-      { "<leader>odd", "<cmd>ObsidianDailies<CR>", desc = "See Recent Dailies" },
-          -- `<cmd>ObsidianDailies -2 1<CR>` Shows Dailies from 2 days ago until tomorrow
-      { "<leader>odt", "<cmd>ObsidianToday<CR>", desc = "Open Today's Document" },
-      { "<leader>of", "<cmd>ObsidianQuickSwitch<CR>", desc = "Find File in Vault" },
-      { "<leader>og", "<cmd>ObsidianSearch<CR>", desc = "Ripgrep Vault" },
-      { "<leader>on", group = "note" },
-      { "<leader>ona", CreateAtomicNote, desc = "New Atomic Note" },
-      { "<leader>onf", CreateFleetingNote, desc = "New Fleeting Note" },
-      { "<leader>onn", CreateNote, desc = "New Note" },
-
       { "<leader>P", "<cmd>Lazy<CR>", desc = "Open NVim Packages (LazyVim)" },
       { "<leader>p", "<cmd>Lazy<CR>", desc = "Open NVim Packages (LazyVim)" },
 
       { "<leader>r", group = "runner" },
 
-      { "<leader>s", function() Snacks.scratch({file = TxtPath, ft = "text", icon = "λ", name = TxtFilename}) end, desc = "Toggle Scratch Buffer" },
-
       { "<leader>t", function() Snacks.terminal() end, desc = "Toggle Terminal" },
 
       { "<leader>u", "<cmd>UndotreeToggle<cr>", desc = "Toggle Undotree" },
+
+      { "<leader>v", group = "vault" },
+      { "<leader>vv", function() Snacks.scratch({file = TxtPath, ft = "text", icon = "λ", name = TxtFilename}) end, desc = "Open lv.txt" },
 
       { "<leader>w", group = "window" },
       { "<leader>ws", "<cmd>split<CR>", desc = "Split Window Horizontally" },
