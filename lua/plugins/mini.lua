@@ -42,10 +42,6 @@ end
 
 ---@return nil
 local starter = function()
-  -- Debug mappings
-  vim.opt.timeout = true
-  vim.opt.timeoutlen = 0  -- Set to 0 to eliminate waiting for multi-key sequences
-
   require("mini.starter").setup({
     evaluate_single = true,
 
