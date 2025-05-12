@@ -3,19 +3,16 @@
 -- Default Neovim options.
 -- Some of these are overwritten depending on context
 
-
-local opt = vim.opt
-
 -- Indentation
-opt.tabstop = 4
-opt.smartindent = true
-opt.wrap = true
+vim.opt.tabstop = 4
+vim.opt.smartindent = true
+vim.opt.wrap = true
 
 -- Appearance
-opt.number = true
-opt.relativenumber = true
-opt.termguicolors = true
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.termguicolors = true
 
 -- Behavior
-opt.encoding = "UTF-8"
+vim.opt.encoding = "UTF-8"
 
