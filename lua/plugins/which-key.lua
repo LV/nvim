@@ -1,5 +1,4 @@
 require("config.vars")
-require("util.which-key")
 
 -- HELPER FUNCTIONS
 ---@return nil
@@ -22,6 +21,7 @@ local lazygit_repo_from_cwd = function()
     vim.notify("Invalid directory for lazygit", vim.log.levels.ERROR)
   end
 end
+
 
 return {
   "folke/which-key.nvim",
@@ -80,6 +80,7 @@ return {
       { "<leader>u", "<cmd>UndotreeToggle<cr>", desc = "Toggle Undotree" },
 
       { "<leader>v", group = "vault" },
+      { "<leader>vd", function()vim.cmd(string.format("tabedit %s/daily/%s.txt", VaultPath, os.date("%Y-%m-%d"))) end, desc = "Open daily note" },
       { "<leader>vv", function() Snacks.scratch({file = TxtPath, ft = "text", icon = "λ", name = TxtFilename}) end, desc = "Open lv.txt" },
 
       { "<leader>w", group = "window" },
