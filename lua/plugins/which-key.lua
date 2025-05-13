@@ -52,7 +52,7 @@ return {
       { "<leader>fc", group = "config" },
       { "<leader>fcv", function() require("oil").open("~/.config/nvim") end, desc = "Open Neovim Config" },
       { "<leader>fcx", function() require("oil").open("~/nixos") end, desc = "Open NixOS Config" },
-      { "<leader>fd", function() Snacks.bufdelete() end, desc = "Delete Buffer" },
+      { "<leader>fd", "<cmd>lua MiniDiff.toggle_overlay()<CR>", desc = "Show Diffs" },
       { "<leader>fe", "<cmd>Oil<CR>", desc = "File Explorer" },
       { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Fuzzy Find Files" },
       { "<leader>fg", "<cmd>Telescope live_grep<CR>", desc = "Ripgrep" },
