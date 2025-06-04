@@ -10,3 +10,8 @@ clean:
 .PHONY: help
 help:
 	@echo "Run \`make clean\` if you wish to remove nvim cache."
+
+.PHONY: lint
+lint:
+	luacheck .
+	stylua .
