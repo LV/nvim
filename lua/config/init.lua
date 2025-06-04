@@ -1,3 +1,4 @@
+-- Bootstrap `lazy.nvim`
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -5,16 +6,17 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+
+-- Load configurations before loading `lazy.nvim`
 require("config.globals")
 require("config.indentation")
 require("config.keymaps")
 require("config.options")
 
-local plugins = "plugins"
 
+-- https://lazy.folke.io/configuration
 local opts = {
   defaults = { lazy = true },
-  install = { colorscheme = { "carbonfox" } },
   rtp = {
     disabled_plugins = {
       "gzip",
@@ -33,5 +35,6 @@ local opts = {
   },
   change_detection = { notify = false },
 }
+
 
 require("lazy").setup(opts)
