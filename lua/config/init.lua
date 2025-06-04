@@ -16,6 +16,9 @@ require("config.options")
 
 -- LazyVim Options
 -- https://lazy.folke.io/configuration
+-- TODO: Review whether to change `defaults` to `false` as suggested in docs
+-- TODO: Review whether to remove `rtp`
+-- TODO: Review whether to change notification for `change_detection`
 local opts = {
   defaults = { lazy = true },
   rtp = {
