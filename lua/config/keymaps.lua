@@ -6,10 +6,6 @@ mapkey("<leader>wk", "<C-w>k", "n", { desc = "Navigate Up" })
 mapkey("<leader>wj", "<C-w>j", "n", { desc = "Navigate Down" })
 mapkey("<leader>wh", "<C-w>h", "n", { desc = "Navigate Left" })
 mapkey("<leader>wl", "<C-w>l", "n", { desc = "Navigate Right" })
-mapkey("<leader>wk", "wincmd k", "n", { desc = "Navigate Up" })
-mapkey("<leader>wj", "wincmd j", "n", { desc = "Navigate Down" })
-mapkey("<leader>wh", "wincmd h", "n", { desc = "Navigate Left" })
-mapkey("<leader>wl", "wincmd l", "n", { desc = "Navigate Right" })
 
 
 -- Go to normal mode from terminal mode by pressing Escape
