@@ -70,6 +70,8 @@ return {
       { "<leader>nd", function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications" },
       { "<leader>nh", function() Snacks.notifier.show_history() end, desc = "Notification History" },
 
+      { "<leader>o", group = "org" },
+
       { "<leader>P", "<cmd>Lazy<CR>", desc = "Open NVim Packages (LazyVim)" },
       { "<leader>p", "<cmd>Lazy<CR>", desc = "Open NVim Packages (LazyVim)" },
 
