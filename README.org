@@ -1,1 +1,7 @@
 #+TITLE: LV's Neovim Configuration
+
+** Linting and Formatting
+Requires ~luacheck~ and ~stylua~:
+#+begin_src sh
+make lint
+#+end_src
