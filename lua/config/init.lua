@@ -14,6 +14,7 @@ require("config.keymaps")
 require("config.options")
 
 
+-- LazyVim Options
 -- https://lazy.folke.io/configuration
 local opts = {
   defaults = { lazy = true },
@@ -31,7 +32,7 @@ local opts = {
     }
   },
   spec = {
-    { import = "plugins" },
+    import = "plugins",
   },
   change_detection = { notify = false },
 }
