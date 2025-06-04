@@ -12,16 +12,7 @@ local config = function()
       "BufReadPre",
       "BufNewFile",
     },
-    ensure_installed = {
-      "cpp",
-      "dockerfile",
-      "gitignore",
-      "lua",
-      "markdown",
-      "python",
-      "toml",
-      "yaml",
-    },
+    ensure_installed = {},
     ignore_install = { "org" }, -- as per `nvim-orgmode` instructions
     auto_install = true,
     highlight = {
