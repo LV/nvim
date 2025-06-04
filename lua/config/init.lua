@@ -38,4 +38,5 @@ local opts = {
 }
 
 
+-- Setup `lazy.nvim`
 require("lazy").setup(opts)
