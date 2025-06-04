@@ -1,1 +1,0 @@
-# LV's Neovim Configuration
