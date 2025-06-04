@@ -28,7 +28,10 @@ local opts = {
       "zipPlugin",
     }
   },
+  spec = {
+    { import = "plugins" },
+  },
   change_detection = { notify = false },
 }
 
-require("lazy").setup(plugins, opts)
+require("lazy").setup(opts)
