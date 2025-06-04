@@ -1,12 +1,6 @@
 local mapkey = require("util.keymapper").mapvimkey
 -- mapvimkey(keymaps, command, vimmode, options)
 
--- Pane and Window Navigation
-mapkey("<leader>wk", "wincmd k", "n", { desc = "Navigate Up" })
-mapkey("<leader>wj", "wincmd j", "n", { desc = "Navigate Down" })
-mapkey("<leader>wh", "wincmd h", "n", { desc = "Navigate Left" })
-mapkey("<leader>wl", "wincmd l", "n", { desc = "Navigate Right" })
-
 
 -- Go to normal mode from terminal mode by pressing Escape
   -- Apply this only when in the shell

@@ -86,10 +86,13 @@ return {
       { "<leader>vv", function() Snacks.scratch({file = TxtPath, ft = "text", icon = "λ", name = TxtFilename}) end, desc = "Open lv.txt" },
 
       { "<leader>w", group = "window" },
+      { "<leader>wh", "<cmd>wincmd h<CR>", desc = "Navigate Left" },
+      { "<leader>wj", "<cmd>wincmd j<CR>", desc = "Navigate Down" },
+      { "<leader>wk", "<cmd>wincmd k<CR>", desc = "Navigate Up" },
+      { "<leader>wl", "<cmd>wincmd l<CR>", desc = "Navigate Right" },
       { "<leader>ws", "<cmd>split<CR>", desc = "Split Window Horizontally" },
       { "<leader>wt", "<cmd>tabnew<CR>", desc = "New Tab" },
       { "<leader>wv", "<cmd>vsplit<CR>", desc = "Split Window Vertically" },
-      -- More window navigation keybindings in =config/keymaps.lua=
     },
   },
 }
