@@ -1,18 +1,18 @@
 -- Patterns to ignore when searching
 local ignore_patterns = {
+  "build",
   ".cache",
+  "CMakeFiles",
   ".config/emacs/elpa",
   ".config/emacs/emojis",
   "_deps",
   ".DS_Store",
   ".git",
+  "linux-gcc-x86",
   ".local",
+  "node_modules",
   ".npm",
   ".venv",
-  "build",
-  "CMakeFiles",
-  "linux-gcc-x86",
-  "node_modules",
 }
 
 ---@return nil
