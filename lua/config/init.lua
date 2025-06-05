@@ -1,3 +1,6 @@
+-- lua/config/init.lua
+-- Neovim core configuration loader and `Lazy.nvim` bootstrapper
+
 -- Bootstrap `lazy.nvim`
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -6,19 +9,17 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-
--- Load configurations before loading `lazy.nvim`
+-- Load core configurations before `Lazy.nvim`
 require("config.globals")
 require("config.indentation")
 require("config.keymaps")
 require("config.options")
 
-
--- LazyVim Options
+-- `Lazy.nvim` setup
 -- https://lazy.folke.io/configuration
--- TODO: Review whether to change `defaults` to `false` as suggested in docs
--- TODO: Review whether to remove `rtp`
--- TODO: Review whether to change notification for `change_detection`
+---@TODO: Review whether to change `defaults` to `false` as suggested in docs
+---@TODO: Review whether to remove `rtp`
+---@TODO: Review whether to change notification for `change_detection`
 local opts = {
   defaults = { lazy = true },
   rtp = {
@@ -40,6 +41,4 @@ local opts = {
   change_detection = { notify = false },
 }
 
-
--- Setup `lazy.nvim`
 require("lazy").setup(opts)
