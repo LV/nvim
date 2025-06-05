@@ -1,6 +1,5 @@
-local mapkey = require("util.keymapper").mapvimkey
--- mapvimkey(keymaps, command, vimmode, options)
-
+-- lua/config/keymaps.lua
+-- Conditional terminal mappings for shell versus non-shell programs
 
 -- Go to normal mode from terminal mode by pressing Escape
   -- Apply this only when in the shell
