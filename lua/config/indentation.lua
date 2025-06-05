@@ -24,6 +24,7 @@ local indentation_profiles = {
   org        = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
   sql        = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
   text       = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
+  toml       = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
   typst      = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
 }
 
