@@ -1,14 +1,12 @@
 -- lua/config/vars.lua
---
--- Assigns variable values upon launching Neovim.
+-- Define global variable values at startup
 
-
--- Configuration options for variables
----@return string | nil
+--- Utility function for getting system hostname
+---@return string|nil hostname
 local function get_hostname()
-  local handle = io.popen("hostname") -- Runs the hostname command
+  local handle = io.popen("hostname") -- Execute hostname command
   if handle then
-    local hostname = handle:read("*a"):gsub("\n", "") -- Removes the newline
+    local hostname = handle:read("*a"):gsub("\n", "") -- Strip newline
     handle:close()
     return hostname
   else
@@ -16,12 +14,14 @@ local function get_hostname()
   end
 end
 
+---@type string|nil
 local hostname = get_hostname()
+
 if hostname == "FY1V4T0VFJ" then  -- Work environment
   VaultPath = "~/bbvault"
   TxtFilename = "bb.txt"
   TxtPath = "/Users/lvictoria7/" .. TxtFilename .. "/" .. TxtFilename
-else  -- Default environment
+else  -- Default personal environment
   VaultPath = "~/v"
   TxtFilename = "lv.txt"
   TxtPath = "~/v/" .. TxtFilename
