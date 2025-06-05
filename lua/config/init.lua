@@ -12,7 +12,6 @@ vim.opt.rtp:prepend(lazypath)
 -- Load core configurations before `Lazy.nvim`
 require("config.globals")
 require("config.indentation")
-require("config.keymaps")
 require("config.options")
 
 -- `Lazy.nvim` setup
