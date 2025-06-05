@@ -41,9 +41,7 @@ local opts = {
       "zipPlugin",
     }
   },
-  spec = {
-    import = "plugins",
-  },
+  spec = { import = "plugins" },
   change_detection = { notify = false },
 }
 
