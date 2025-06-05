@@ -1,7 +1,6 @@
 -- lua/config/options.lua
---
--- Default Neovim options.
--- Some of these are overwritten depending on context
+-- Default Neovim options
+-- May be overridden in filetype-specific or plugin-specific contexts
 
 -- Indentation
 vim.opt.tabstop = 4
@@ -15,4 +14,3 @@ vim.opt.termguicolors = true
 
 -- Behavior
 vim.opt.encoding = "UTF-8"
-
