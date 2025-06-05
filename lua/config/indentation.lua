@@ -2,8 +2,13 @@
 -- Filetype-specific indentation settings
 
 -- Indentation profiles
--- `expandtab`: true = spaces, false = tabs
--- `shiftwidth` must be equal to `tabstop` for visual consistency
+--- `shiftwidth` must be equal to `tabstop` for visual consistency
+---@class IndentationOptions
+---@field expandtab boolean # Use spaces if true, tabs if false
+---@field shiftwidth integer # Number of spaces per indentation level
+---@field tabstop integer # Number of spaces a <Tab> counts for
+
+---@type table<string, IndentationOptions>
 local indentation_profiles = {
   c          = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
   cmake      = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
@@ -24,7 +29,7 @@ local indentation_profiles = {
 
 --- Set filetype-specific indentation settings using autocmds.
 --- Creates a `FileType` autocmd for each filetype listed in the input table.
----@param filetype_opts table<string, {expandtab: boolean, shiftwidth: integer, tabstop: integer}>
+---@param filetype_opts table<string, IndentationOptions>
 ---@return nil
 local function set_indentation_settings(filetype_opts)
   local group = vim.api.nvim_create_augroup("IndentationSettings", { clear = true })
