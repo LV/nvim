@@ -1,6 +1,7 @@
 -- lua/config/vars.lua
 -- Define global variable values at startup
 
+
 --- Utility function for getting system hostname
 ---@return string|nil hostname
 local function get_hostname()
