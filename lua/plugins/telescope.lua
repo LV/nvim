@@ -52,6 +52,7 @@ local config = function()
   telescope.load_extension("fzf")
 end
 
+---@type LazyPluginSpec
 return {
   "nvim-telescope/telescope.nvim",
   cmd = { "Telescope", "TodoTelescope" },

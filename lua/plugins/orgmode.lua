@@ -27,6 +27,7 @@ local config = function()
 end
 
 
+---@type LazyPluginSpec
 return {
   "nvim-orgmode/orgmode",
   event = "VeryLazy",

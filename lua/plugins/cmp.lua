@@ -66,6 +66,7 @@ local config = function()
   })
 end
 
+---@type LazyPluginSpec
 return {
   'hrsh7th/nvim-cmp',
   event = 'InsertEnter',

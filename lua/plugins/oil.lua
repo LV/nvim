@@ -12,6 +12,7 @@ local config = function()
   })
 end
 
+---@type LazyPluginSpec
 return {
   'stevearc/oil.nvim',
   ---@module 'oil'

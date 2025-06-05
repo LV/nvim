@@ -1,8 +1,10 @@
 return {
+  ---@type LazyPluginSpec
   {
     "mason-org/mason.nvim",
     opts = {},
   },
+  ---@type LazyPluginSpec
   {
     "mason-org/mason-lspconfig.nvim",
     opts = {},
@@ -11,6 +13,7 @@ return {
       "neovim/nvim-lspconfig",
     },
   },
+  ---@type LazyPluginSpec
   {
     "neovim/nvim-lspconfig",
     lazy = false,

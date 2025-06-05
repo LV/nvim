@@ -27,6 +27,7 @@ if useTransparent then
     vim.cmd("TransparentEnable")
   end
 
+  ---@type LazyPluginSpec
   return {
     "xiyaowong/transparent.nvim",
     lazy = false,

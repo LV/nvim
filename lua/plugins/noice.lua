@@ -21,6 +21,7 @@ local config = function()
 end
 
 
+---@type LazyPluginSpec
 return {
   "folke/noice.nvim",
   event = "VeryLazy",

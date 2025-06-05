@@ -31,6 +31,7 @@ local config = function()
   })
 end
 
+---@type LazyPluginSpec
 return {
   "nvim-treesitter/nvim-treesitter",
   lazy = false,

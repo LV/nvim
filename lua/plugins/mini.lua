@@ -80,6 +80,7 @@ local statusline = function()
   require("mini.statusline").setup()
 end
 
+---@type LazyPluginSpec
 return {
   "echasnovski/mini.nvim",
   version = false,

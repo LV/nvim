@@ -23,6 +23,7 @@ local lazygit_repo_from_cwd = function()
 end
 
 
+---@type LazyPluginSpec
 return {
   "folke/which-key.nvim",
   dependencies = { "echasnovski/mini.nvim" },
