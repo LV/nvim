@@ -1,4 +1,31 @@
--- File-specific line indentation
+-- lua/config/indentation.lua
+-- Filetype-specific indentation settings
+
+-- Indentation profiles
+-- `expandtab`: true = spaces, false = tabs
+-- `shiftwidth` must be equal to `tabstop` for visual consistency
+local indentation_profiles = {
+  c          = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
+  cmake      = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
+  cpp        = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
+  cs         = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
+  dockerfile = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
+  go         = { expandtab = false, shiftwidth = 4, tabstop = 4 },
+  json       = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
+  lua        = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
+  make       = { expandtab = false, shiftwidth = 4, tabstop = 4 },
+  markdown   = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
+  nix        = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
+  org        = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
+  sql        = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
+  text       = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
+  typst      = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
+}
+
+--- Set filetype-specific indentation settings using autocmds.
+--- Creates a `FileType` autocmd for each filetype listed in the input table.
+---@param filetype_opts table<string, {expandtab: boolean, shiftwidth: integer, tabstop: integer}>
+---@return nil
 local function set_indentation_settings(filetype_opts)
   local group = vim.api.nvim_create_augroup("IndentationSettings", { clear = true })
   for filetype, opts in pairs(filetype_opts) do
@@ -10,96 +37,4 @@ local function set_indentation_settings(filetype_opts)
   end
 end
 
--- `expandtab`: true means spaces, false means tabs
--- `shiftwidth` must be equal to `tabstop`
-set_indentation_settings({
-  c = {
-    expandtab = true,
-    shiftwidth = 4,
-    tabstop = 4,
-  },
-
-  cmake = {
-    expandtab = true,
-    shiftwidth = 4,
-    tabstop = 4,
-  },
-
-  cpp = {
-    expandtab = true,
-    shiftwidth = 4,
-    tabstop = 4,
-  },
-
-  cs = {
-    expandtab = true,
-    shiftwidth = 4,
-    tabstop = 4,
-  },
-
-  dockerfile = {
-    expandtab = true,
-    shiftwidth = 4,
-    tabstop = 4,
-  },
-
-  go = {
-    expandtab = false,
-    shiftwidth = 4,
-    tabstop = 4,
-  },
-
-  json = {
-    expandtab = true,
-    shiftwidth = 2,
-    tabstop = 2,
-  },
-
-  lua = {
-    expandtab = true,
-    shiftwidth = 2,
-    tabstop = 2,
-  },
-
-  make = {
-    expandtab = false,
-    shiftwidth = 4,
-    tabstop = 4,
-  },
-
-  markdown = {
-    expandtab = true,
-    shiftwidth = 4,
-    tabstop = 4,
-  },
-
-  nix = {
-    expandtab = true,
-    shiftwidth = 2,
-    tabstop = 2,
-  },
-
-  org = {
-    expandtab = true,
-    shiftwidth = 2,
-    tabstop = 2,
-  },
-
-  sql = {
-    expandtab = true,
-    shiftwidth = 4,
-    tabstop = 4,
-  },
-
-  text = {
-    expandtab = true,
-    shiftwidth = 2,
-    tabstop = 2,
-  },
-
-  typst = {
-    expandtab = true,
-    shiftwidth = 2,
-    tabstop = 2,
-  },
-})
+set_indentation_settings(indentation_profiles)
