@@ -6,5 +6,5 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 -- Global editor options
-vim.o.conceallevel=1
+vim.o.conceallevel=0
 vim.opt.clipboard = "unnamedplus"
