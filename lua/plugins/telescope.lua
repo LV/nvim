@@ -1,3 +1,5 @@
+-- NOTE: If this plugin is slow in large codebases, switch to fzf-lua
+
 -- Patterns to ignore when searching
 local ignore_patterns = {
   "build",
