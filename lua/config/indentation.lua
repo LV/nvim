@@ -11,6 +11,7 @@
 ---@type table<string, IndentationOptions>
 local indentation_profiles = {
   c          = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
+  cfg        = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
   cmake      = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
   cpp        = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
   cs         = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
