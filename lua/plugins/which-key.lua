@@ -61,10 +61,10 @@ return {
       { "<leader>fv", function() require("oil").open(VaultPath) end, desc = "Open Vault" },
 
       { "<leader>g", group = "git" },
-      { "<leader>gB", function() Snacks.gitbrowse() end, desc = "Git Browse" },
       { "<leader>gb", function() Snacks.git.blame_line() end, desc = "Git Blame Line" },
       { "<leader>gg", function() lazygit_repo_from_cwd() end, desc = "LazyGit" },
       { "<leader>gl", function() Snacks.lazygit.log() end, desc = "Lazygit Log (cwd)" },
+      { "<leader>go", function() Snacks.gitbrowse() end, desc = "Git Open in Browser" },
 
       { "<leader>n", group = "notifications" },
       { "<leader>nd", function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications" },
