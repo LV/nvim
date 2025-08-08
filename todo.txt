@@ -114,3 +114,119 @@ Extensions to look at:
 - Navigation
   - https://github.com/ray-x/navigator.lua
   - https://github.com/stevearc/aerial.nvim
+
+
+
+00:25 - auto-save.nvim (by okuuva)
+02:17 - vim-syntax-bind-named
+05:49 - bullets.vim
+06:42 - nvim-colorizer.lua
+08:35 - core.lua
+08:53 - vim-dadbod
+12:44 - ghostty
+15:34 - img-clip.nvim
+17:15 - kubectl.nvim (unused)
+23:53 - noice.nvim
+26:17 - harper_ls
+29:10 - outline.nvim
+30:19 - project-explorer.nvim (unused)
+34:21 - snipe.nvim (unused)
+35:42 - stay-centered.nvim
+36:35 - telescope telescope-frecency (unused)
+38:28 - vim-tmux-navigator
+39:29 - vim-visual-multi (unused)
+39:46 - virt-column.nvim
+
+abolish.vim (tpope/vim-abolish)
+ale (dense-analysis/ale)
+arrow.nvim
+auto-session (rmagatti/auto-session)
+axkirillov/easypick.nvim
+bagohart/vim-insert-append-single-character
+better-whitespace (ntpeters/vim-better-whitespace)
+boole.nvim
+buffkill.vim
+bufferline.nvim
+bufremove (mini.bufremove)
+buftabline (ap/vim-buftabline)
+chrisbra/NrrwRgn
+chrisgrieser/nvim-rip-substitute
+christoomey/vim-sort-motion
+christoomey/vim-titlecase
+coc-explorer
+coc.nvim (neoclide/coc.nvim)
+easymotion/vim-easymotion
+eraserhd/parinfer-rust
+fdschmidt93/telescope-egrepify.nvim
+fzf (junegunn/fzf)
+fzf-checkout
+fzf-marks.vim
+fzf.vim
+gitgutter (airblade/vim-gitgutter)
+golden-ratio (roman/golden-ratio)
+goyo.vim
+grapple.nvim
+grugfar (search-and-replace)
+gv.vim
+hare.vim
+helpview.nvim
+hexokinase (RRethy/vim-hexokinase)
+highlightedyank (machakann/vim-highlightedyank)
+incline.nvim
+janko/vim-test
+lazygit
+line-number-change-mode.nvim
+lualine-pretty-path
+mason.nvim (plus mason-family helpers)
+minimap.vim
+mucomplete
+neovim-project
+no-neck-pain.nvim
+npm_scripts.nvim
+nrf ReplaceWithRegister / ReplaceWithSameIndentRegister
+nvim-comment (alias of comment.nvim)
+packer.nvim
+paq-nvim (savq/paq-nvim)
+pear-tree (tmsvg/pear-tree)
+plenary.nvim
+projectlaunch.nvim
+quicker.nvim
+ranger.vim
+reflector.nvim (old quick-fix reflector)
+romainl/vim-cool
+substitute.nvim (gbprod/substitute.nvim)
+suda.vim
+targets.vim
+term-utils.nvim
+ultisnips
+vim-abolish (see first)
+vim-airline
+vim-arpeggio
+vim-bad-whitespace
+vim-closer
+vim-css-color
+vim-devicons
+vim-easy-align
+vim-endwise
+vim-eunuch
+vim-flog
+vim-gutentags
+vim-indent-guides
+vim-lastplace
+vim-mundo
+vim-peeka­boo
+vim-plug
+vim-polyglot
+vim-projectionist (and fuzzy-projectionist)
+vim-rsi
+vim-sandwich
+vim-sleuth
+vim-smooth-scroll
+vim-startify
+vim-strip-trailing-whitespace
+vim-surround
+vim-unimpaired
+vim-vinegar
+vim-wiki
+vifm.vim
+youcompleteme (YCM)
