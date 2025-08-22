@@ -29,6 +29,7 @@ local indentation_profiles = {
   nix        = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
   org        = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
   sql        = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
+  svg        = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
   text       = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
   toml       = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
   typescript = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
