@@ -177,7 +177,6 @@ janko/vim-test
 lazygit
 line-number-change-mode.nvim
 lualine-pretty-path
-mason.nvim (plus mason-family helpers)
 minimap.vim
 mucomplete
 neovim-project
@@ -185,7 +184,6 @@ no-neck-pain.nvim
 npm_scripts.nvim
 nrf ReplaceWithRegister / ReplaceWithSameIndentRegister
 nvim-comment (alias of comment.nvim)
-packer.nvim
 paq-nvim (savq/paq-nvim)
 pear-tree (tmsvg/pear-tree)
 plenary.nvim
