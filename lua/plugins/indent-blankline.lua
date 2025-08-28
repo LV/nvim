@@ -3,6 +3,7 @@ return {
   main = "ibl",
   ---@module "ibl"
   ---@type ibl.config
-  opts = {},
+  opts = { enabled = false },  -- press keybinding once to enable instead of twice (due to toggle)
+  keys = { { "<leader>mi", "<cmd>IBLToggle<CR>", desc = "Toggle Indentation Guide" } },
   lazy = true,
 }
