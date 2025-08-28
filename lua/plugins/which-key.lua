@@ -70,19 +70,15 @@ return {
       { "<leader>nd", function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications" },
       { "<leader>nh", function() Snacks.notifier.show_history() end, desc = "Notification History" },
 
-      { "<leader>o", group = "org" },
-
       { "<leader>P", "<cmd>Lazy<CR>", desc = "Open NVim Packages (LazyVim)" },
       { "<leader>p", "<cmd>Lazy<CR>", desc = "Open NVim Packages (LazyVim)" },
-
-      { "<leader>r", group = "runner" },
 
       { "<leader>t", function() Snacks.terminal() end, desc = "Toggle Terminal" },
 
       { "<leader>u", "<cmd>UndotreeToggle<cr>", desc = "Toggle Undotree" },
 
       { "<leader>v", group = "vault" },
-      { "<leader>vd", function()vim.cmd(string.format("tabedit %s/daily/%s.txt", VaultPath, os.date("%Y-%m-%d"))) end, desc = "Open daily note" },
+      { "<leader>vd", function() vim.cmd(string.format("tabedit %s/daily/%s.txt", VaultPath, os.date("%Y-%m-%d"))) end, desc = "Open daily note" },
       { "<leader>vv", function() Snacks.scratch({file = TxtPath, ft = "text", icon = "λ", name = TxtFilename}) end, desc = "Open lv.txt" },
 
       { "<leader>w", group = "window" },
