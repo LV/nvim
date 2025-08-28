@@ -69,7 +69,7 @@ end
 ---@type LazyPluginSpec
 return {
   'hrsh7th/nvim-cmp',
-  event = 'InsertEnter',
+  event = { "InsertEnter", "CmdlineEnter" },
   dependencies = {
     -- Completion Sources
     {'hrsh7th/cmp-nvim-lsp'},               -- LSP completion
@@ -83,7 +83,6 @@ return {
     -- Snippets engine
     {'L3MON4D3/LuaSnip'},
   },
-  lazy = false,
   config = config,
 }
 
