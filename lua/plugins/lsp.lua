@@ -2,11 +2,13 @@ return {
   ---@type LazyPluginSpec
   {
     "mason-org/mason.nvim",
+    cmd = "Mason",
     opts = {},
   },
   ---@type LazyPluginSpec
   {
     "mason-org/mason-lspconfig.nvim",
+    event = { "BufReadPre", "BufNewFile" },
     opts = {},
     dependencies = {
       { "mason-org/mason.nvim", opts = {} },
@@ -16,7 +18,7 @@ return {
   ---@type LazyPluginSpec
   {
     "neovim/nvim-lspconfig",
-    lazy = false,
+    event = { "BufReadPre", "BufNewFile" },
     dependencies = {
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
