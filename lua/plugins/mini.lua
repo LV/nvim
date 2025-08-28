@@ -23,6 +23,20 @@ local indentscope = function()
     },
     symbol = "│",
   })
+
+  -- Add keybinding to toggle indentscope and whitespace together
+  vim.keymap.set('n', '<leader>mi', function()
+    -- Toggle mini.indentscope
+    vim.b.miniindentscope_disable = not vim.b.miniindentscope_disable
+
+    -- Also toggle whitespace display with periods
+    if vim.opt.list:get() then
+      vim.opt.list = false
+    else
+      vim.opt.list = true
+      vim.opt.listchars = { tab = "→ ", space = "·", trail = "~", extends = ">", precedes = "<" }
+    end
+  end, { desc = "Toggle Indentation Guide & Whitespace" })
 end
 
 ---@return nil

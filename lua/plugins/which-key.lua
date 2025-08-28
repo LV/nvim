@@ -67,7 +67,7 @@ return {
       { "<leader>go", function() Snacks.gitbrowse() end, desc = "Git Open in Browser" },
 
       { "<leader>m", group = "misc" },
-      -- { "<leader>mi", "<cmd>IBLToggle<CR>", desc = "Toggle Indentation Guide" },  -- declared in `indent-blankline.lua`
+      -- <leader>mi  -- toggle mini.indentscope
 
       { "<leader>n", group = "notifications" },
       { "<leader>nd", function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications" },
