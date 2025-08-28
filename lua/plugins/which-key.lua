@@ -66,6 +66,9 @@ return {
       { "<leader>gl", function() Snacks.lazygit.log() end, desc = "Lazygit Log (cwd)" },
       { "<leader>go", function() Snacks.gitbrowse() end, desc = "Git Open in Browser" },
 
+      { "<leader>m", group = "misc" },
+      { "<leader>mi", function() require("ibl").setup() end, desc = "Toggle Indentation Guide" },
+
       { "<leader>n", group = "notifications" },
       { "<leader>nd", function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications" },
       { "<leader>nh", function() Snacks.notifier.show_history() end, desc = "Notification History" },
