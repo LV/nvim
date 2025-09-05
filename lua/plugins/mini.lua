@@ -1,4 +1,15 @@
 ---@return nil
+local init = function()
+  -- Disable indentscope in `.txt` files
+  vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "text" },
+    callback = function()
+      vim.b.miniindentscope_disable = true
+    end,
+  })
+end
+
+---@return nil
 local diff = function()
   require("mini.diff").setup({
     view = {
@@ -16,7 +27,6 @@ end
 
 ---@return nil
 local indentscope = function()
-  -- TODO: Have this not load on `.txt` buffers
   require("mini.indentscope").setup({
     draw = {
       delay = 0,
@@ -99,6 +109,7 @@ end
 return {
   "echasnovski/mini.nvim",
   version = false,
+  init = init,
   config = function()
     diff()
     icons()
