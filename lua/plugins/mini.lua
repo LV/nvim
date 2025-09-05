@@ -16,6 +16,7 @@ end
 
 ---@return nil
 local indentscope = function()
+  -- TODO: Have this not load on `.txt` buffers
   require("mini.indentscope").setup({
     draw = {
       delay = 0,
