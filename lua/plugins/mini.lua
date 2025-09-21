@@ -21,7 +21,7 @@ end
 ---@return nil
 local icons = function()
   require("mini.icons").setup({
-    style = "glyph",
+    style = "ascii",
   })
 end
 
