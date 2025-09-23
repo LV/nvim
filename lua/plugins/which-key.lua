@@ -60,6 +60,8 @@ return {
       { "<leader>ft", "<cmd>TodoTelescope<CR>", desc = "Search TODO" },
       { "<leader>fv", function() require("oil").open(VaultPath) end, desc = "Open Vault" },
 
+      { "gd", function() require("telescope.builtin").lsp_definitions() end, desc = "Go to function definition" },
+
       { "<leader>g", group = "git" },
       { "<leader>gb", function() Snacks.git.blame_line() end, desc = "Git Blame Line" },
       { "<leader>gg", function() lazygit_repo_from_cwd() end, desc = "LazyGit" },
