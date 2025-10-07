@@ -4,6 +4,7 @@ local config = function()
     pattern = "text",
     callback = function()
       vim.cmd([[setlocal ve=all]])
+      vim.opt_local.wrap = false
       vim.keymap.set("n", "J", "<C-v>j:VBox<CR>", { buffer = true, noremap = true })
       vim.keymap.set("n", "K", "<C-v>k:VBox<CR>", { buffer = true, noremap = true })
       vim.keymap.set("n", "L", "<C-v>l:VBox<CR>", { buffer = true, noremap = true })
