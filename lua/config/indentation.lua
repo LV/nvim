@@ -19,6 +19,7 @@ local indentation_profiles = {
   dockerfile = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
   go         = { expandtab = false, shiftwidth = 4, tabstop = 4 },
   html       = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
+  htmldjango = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
   javascript = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
   json       = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
   jsonc      = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
