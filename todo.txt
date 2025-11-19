@@ -1,7 +1,4 @@
 Extensions to look at:
-- Draw ASCII diagrams
-  - https://github.com/jbyuki/venn.nvim
-
 - UI design framework
   - Heirline
     - https://github.com/rebelot/heirline.nvim
