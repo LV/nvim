@@ -4,7 +4,7 @@
 -- Indentation profiles
 --- `shiftwidth` must be equal to `tabstop` for visual consistency
 ---@class IndentationOptions
----@field expandtab boolean # Use spaces if true, tabs if false
+---@field expandtab boolean # true = spaces, false = tabs
 ---@field shiftwidth integer # Number of spaces per indentation level
 ---@field tabstop integer # Number of spaces a <Tab> counts for
 
