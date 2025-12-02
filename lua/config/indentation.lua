@@ -35,6 +35,7 @@ local indentation_profiles = {
   toml       = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
   typescript = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
   typst      = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
+  xml        = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
 }
 
 --- Set filetype-specific indentation settings using autocmds.
