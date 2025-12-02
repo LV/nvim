@@ -29,6 +29,7 @@ local indentation_profiles = {
   markdown   = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
   nix        = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
   org        = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
+  perl       = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
   sql        = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
   svg        = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
   text       = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
