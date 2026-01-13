@@ -14,7 +14,7 @@ local config = function()
   })
 end
 
---- @type LazyPluginSpec
+---@type LazyPluginSpec
 return {
   "jbyuki/venn.nvim",
   ft = "text",   -- load only for text files
