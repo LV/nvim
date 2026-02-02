@@ -1,4 +1,4 @@
-  ---@type fun()
+---@type fun()
 local config = function()
   vim.cmd("colorscheme bluloco")
 end
