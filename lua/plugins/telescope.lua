@@ -17,7 +17,7 @@ local ignore_patterns = {
   ".venv",
 }
 
----@return nil
+---@type fun()
 local config = function()
   local telescope = require("telescope")
   telescope.setup({

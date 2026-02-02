@@ -1,4 +1,4 @@
----@return nil
+---@type fun()
 local init = function()
   -- Disable indentscope in `.txt` files
   vim.api.nvim_create_autocmd("FileType", {
@@ -9,7 +9,7 @@ local init = function()
   })
 end
 
----@return nil
+---@type fun()
 local diff = function()
   require("mini.diff").setup({
     view = {
@@ -18,14 +18,14 @@ local diff = function()
   })
 end
 
----@return nil
+---@type fun()
 local icons = function()
   require("mini.icons").setup({
     style = "glyph",
   })
 end
 
----@return nil
+---@type fun()
 local indentscope = function()
   require("mini.indentscope").setup({
     draw = {
@@ -50,12 +50,12 @@ local indentscope = function()
   end, { desc = "Toggle Indentation Guide & Whitespace" })
 end
 
----@return nil
+---@type fun()
 local jump = function()
   require("mini.jump").setup()
 end
 
----@return nil
+---@type fun()
 local jump2d = function()
   require("mini.jump2d").setup({
     labels = "etovxqpdygfblzhckisuran",
@@ -65,7 +65,7 @@ local jump2d = function()
   })
 end
 
----@return nil
+---@type fun()
 local starter = function()
   require("mini.starter").setup({
     evaluate_single = true,
@@ -100,7 +100,7 @@ local starter = function()
   end
 end
 
----@return nil
+---@type fun()
 local statusline = function()
   require("mini.statusline").setup()
 end

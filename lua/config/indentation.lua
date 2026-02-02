@@ -44,7 +44,7 @@ local indentation_profiles = {
 --- Set filetype-specific indentation settings using autocmds.
 --- Creates a `FileType` autocmd for each filetype listed in the input table.
 ---@param filetype_opts table<string, IndentationOptions>
----@return nil
+---@type fun()
 local function set_indentation_settings(filetype_opts)
   local group = vim.api.nvim_create_augroup("IndentationSettings", { clear = true })
   for filetype, opts in pairs(filetype_opts) do

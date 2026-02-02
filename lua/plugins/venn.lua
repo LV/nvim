@@ -1,4 +1,4 @@
----@return nil
+---@type fun()
 local config = function()
   vim.api.nvim_create_autocmd("FileType", {
     pattern = "text",

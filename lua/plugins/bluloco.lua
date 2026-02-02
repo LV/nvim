@@ -1,8 +1,4 @@
--- lua/plugins/bluloco.lua
--- Main colorscheme
-
-
----@return nil
+  ---@type fun()
 local config = function()
   vim.cmd("colorscheme bluloco")
 end

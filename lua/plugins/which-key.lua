@@ -1,7 +1,7 @@
 require("config.vars")
 
 -- HELPER FUNCTIONS
----@return nil
+---@type fun()
 local lazygit_repo_from_cwd = function()
   -- When opening lazygit, open repo in the directory of the current buffer.
   -- Rather than opening repo from directory where `nvim` was first invoked.

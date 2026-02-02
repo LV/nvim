@@ -1,4 +1,4 @@
----@return nil
+---@type fun()
 local config = function()
   require("nvim-treesitter.configs").setup({
     build = ":TSUpdate",
