@@ -116,7 +116,6 @@ Extensions to look at:
 00:25 - auto-save.nvim (by okuuva)
 02:17 - vim-syntax-bind-named
 05:49 - bullets.vim
-06:42 - nvim-colorizer.lua
 08:35 - core.lua
 08:53 - vim-dadbod
 12:44 - ghostty
