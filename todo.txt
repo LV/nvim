@@ -42,10 +42,6 @@ Extensions to look at:
   - https://github.com/folke/flash.nvim
   - https://github.com/sphamba/smear-cursor.nvim
 
-- Which Key
-  - https://github.com/folke/which-key.nvim
-  - https://github.com/mrjones2014/legendary.nvim
-
 - Tree Sitter
   - https://github.com/nvim-treesitter/nvim-treesitter-textobjects?tab=readme-ov-file#text-objects-move
   - https://github.com/windwp/nvim-ts-autotag
@@ -71,7 +67,6 @@ Extensions to look at:
   - https://github.com/chentoast/marks.nvim
   - https://github.com/ThePrimeagen/harpoon
   - https://github.com/ibhagwan/fzf-lua
-  - https://github.com/ahmedkhalf/project.nvim
 
 - Find and Replace
   - https://github.com/nvim-pack/nvim-spectre
