@@ -56,16 +56,6 @@ local jump = function()
 end
 
 ---@type fun()
-local jump2d = function()
-  require("mini.jump2d").setup({
-    labels = "etovxqpdygfblzhckisuran",
-    mappings = {
-      start_jumping = "", -- remove default binding
-    },
-  })
-end
-
----@type fun()
 local starter = function()
   require("mini.starter").setup({
     evaluate_single = true,

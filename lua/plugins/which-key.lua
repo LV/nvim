@@ -76,8 +76,6 @@ return {
       { "<leader>P", "<cmd>Lazy<CR>", desc = "Open NVim Packages (LazyVim)" },
       { "<leader>p", "<cmd>Lazy<CR>", desc = "Open NVim Packages (LazyVim)" },
 
-      { "s", "<cmd>lua MiniJump2d.start(MiniJump2d.builtin_opts.single_character)<CR>", desc = "Hop to Char" },
-
       { "<leader>t", function() Snacks.terminal() end, desc = "Toggle Terminal" },
 
       { "<leader>u", "<cmd>UndotreeToggle<cr>", desc = "Toggle Undotree" },
