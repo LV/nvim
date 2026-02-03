@@ -38,8 +38,6 @@ return {
         desc = "Buffer Local Keymaps (which-key)",
       },
 
-      { ".", "<cmd>lua MiniJump2d.start(MiniJump2d.builtin_opts.single_character)<CR>", desc = "Hop to Char" },
-
       { "<leader>c", group = "code" },
       { "<leader>cd", "<cmd>lua vim.diagnostic.open_float()<CR>", desc = "Diagnose" },
       { "<leader>cD", "<cmd>Telescope diagnostics<CR>", desc = "All Diagnostics" },
@@ -77,6 +75,8 @@ return {
 
       { "<leader>P", "<cmd>Lazy<CR>", desc = "Open NVim Packages (LazyVim)" },
       { "<leader>p", "<cmd>Lazy<CR>", desc = "Open NVim Packages (LazyVim)" },
+
+      { "s", "<cmd>lua MiniJump2d.start(MiniJump2d.builtin_opts.single_character)<CR>", desc = "Hop to Char" },
 
       { "<leader>t", function() Snacks.terminal() end, desc = "Toggle Terminal" },
 
