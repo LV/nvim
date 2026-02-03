@@ -39,7 +39,6 @@ Extensions to look at:
   - https://github.com/tris203/precognition.nvim
   - https://github.com/smoka7/hop.nvim
   - https://github.com/ggandor/leap.nvim
-  - https://github.com/folke/flash.nvim
   - https://github.com/sphamba/smear-cursor.nvim
 
 - Tree Sitter
