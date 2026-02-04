@@ -105,7 +105,6 @@ return {
     icons()
     indentscope()
     jump()
-    jump2d()
     starter()
     statusline()
   end,
