@@ -15,12 +15,13 @@ vim.opt.termguicolors = true
 -- Behavior
 vim.opt.encoding = "UTF-8"
 
--- Remove trailing whitespace on save
+-- Remove trailing whitespace and newlines on save
 vim.api.nvim_create_autocmd("BufWritePre", {
   pattern = "*",
   callback = function()
     local save_cursor = vim.fn.getpos(".")
-    vim.cmd([[%s/\s\+$//e]])
+    vim.cmd([[%s/\s\+$//e]])  -- remove trailing whitespace
+    vim.cmd([[%s/\($\n\s*\)\+\%$//e]])  -- remove trailing newlines
     vim.fn.setpos(".", save_cursor)
   end,
 })
