@@ -3,6 +3,7 @@
 ## Pre-requisites
 - `fzf`
 - `gcc`
+- `lazygit`
 - `make`
 - `ripgrep`
 
