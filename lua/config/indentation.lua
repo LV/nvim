@@ -34,12 +34,14 @@ local indentation_profiles = {
   quarto     = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
   rust       = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
   sql        = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
+  sh         = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
   svg        = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
   text       = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
   toml       = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
   typescript = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
   typst      = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
   xml        = { expandtab = true,  shiftwidth = 4, tabstop = 4 },
+  zsh        = { expandtab = true,  shiftwidth = 2, tabstop = 2 },
 }
 
 --- Set filetype-specific indentation settings using autocmds.
